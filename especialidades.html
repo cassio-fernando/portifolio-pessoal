@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: rgb(10, 10, 22);           
+        }
+        
+        .bordas {
+            background: rgb(88, 88, 92);
+            padding:0px;
+            margin: 0px 20px;
+            border: 20px solid rgb(88, 88, 92);            
+            border-radius: 10px;
+        }
+
+        .bordas:hover {
+            transform: scale(1.1);
+            z-index: 1;
+        }
+
+        p {
+           
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: bold;            
+        }
+        @media(max-width: 480px) {
+            p {
+            font-size: 12;
+            text-align: center;
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: bold   
+            }
+        }
+
+        h1 {
+            color: rgb(248, 169, 72);   
+                       
+        }
+       
+        .heading {
+            text-align: center;
+            padding: 1rem 0;
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            padding: 2rem;
+            flex-wrap: wrap;
+        }
+        .left {
+            position: relative;
+            width: 24rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .left img {
+            position: relative;
+            width: 100%;
+        }
+
+        .right {
+            width: 50%;
+        }
+
+        .right ul .bar{
+            height: 4rem;
+            position: relative;
+            list-style: none;
+            border-radius: 10px;
+            margin: 4rem 0;
+            animation:skills;
+            animation-duration: 1s;
+        }
+
+        .right ul .html {
+            width: 90%;
+            background-color: rgb(53, 153, 240);
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .right ul .css {
+            width: 70%;
+            background-color: rgb(30, 218, 208);
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .right ul .js {
+            width: 60%;
+            background-color: rgb(36, 218, 157);
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .right ul .bootstrap {
+            width: 80%;
+            background-color: rgb(211, 41, 78);
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .right ul .react {
+            width: 40%;
+            background-color: rgb(230, 30, 213);
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .right ul .php {
+            width: 40%;
+            background-color: rgb(155, 111, 45);
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .language {
+            position: absolute;
+            bottom: .6rem;
+            left: 0;
+        }
+        .percentage {
+            position: absolute;
+            bottom: .6rem;
+            right: 0;
+        }
+        @media  screen and (max-width: 834px) {
+            .skills {
+                padding: .5rem;
+            }
+            .right {
+                width: 90%;
+            }
+        }
+
+       
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="logo">
+        </div>
+        <a class="navbar-brand" href="images/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">INICIO <span class="sr-only"></span></a>
+                  </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="sobremim.html">SOBRE MIM <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">PROJETOS <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="especialidades.html">ESPECIALIDADES <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Contato.html">CONTATO <span class="sr-only"></span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">        
+            <div class="row justify-content-center">
+                <h1 class="mt-5">ESPECIALIDADES</h1>
+            </div>
+       
+
+        
+           
+            <div class="row mb-5 p-5 justify-content-center">
+
+                <div class="mt-5  col-12 col-md-3 bordas">
+                <div class="text-center">
+                    <img class="img-fluid" src="images/html.png">
+                    <p class="mt-4"> HTML </p>
+                </div>
+                 </div>
+                 
+                 <div class="mt-5  col-12 col-md-3 bordas">
+                    <div class="text-center">
+                    <img src="images/css.png">
+                    <p class="mt-4"> CSS </p>
+                </div>
+                 </div>
+                
+ 
+ 
+                 <div class="mt-5 col-12 col-md-3 bordas">
+                    <div class="text-center">
+                     <img class="img-fluid" src="images/javaScript.png">
+                     <p class="mt-4"> JavaScript </p>
+                    </div>
+                 </div>
+ 
+                 <div class="mt-5 col-12 col-md-3 bordas">
+                    <div class="text-center">
+                     <img class="img-fluid" src="images/bootstrap.png">
+                     <p class="mt-4"> Bootstrap </p>
+                    </div>
+                 </div>
+ 
+ 
+                 <div class="mt-5 col-12 col-md-3 bordas">
+                    <div class="text-center">
+                     <img class="img-fluid" src="images/React.png">
+                     <p class="mt-4"> React </p>
+                    </div>
+                 </div>
+ 
+                 <div class="mt-5 col-12 col-md-3 bordas">
+                    <div class="text-center">
+                     <img class="img-fluid" src="images/PHP.png">
+                     <p class="mt-4"> PHP </p>
+                    </div>
+                 </div> 
+             
+           
+        </div>
+
+        <h1 class="heading"> Barra de Habilidade</h1>
+        <section class="skills">
+            <div class="left">
+                <img src="images/programer.png" class="img-fluid">
+            </div>
+
+            <div class="right">
+                <ul>
+                    <li class="bar html"><span class="ml-2 language"> HTML </span>    <span class="mr-4 percentage"> 90%</span>     </li>
+                    <li class="bar css"><span class="ml-2 language"> CSS </span> <span class="mr-4 percentage"> 70%</span>   </li>
+                    <li class="bar js"><span class="ml-2 language">javaScript </span> <span class="mr-4 percentage"> 60%</span>   </li>
+                    <li class="bar bootstrap"><span class="ml-2 language"> Bootstrap </span> <span class="mr-4 percentage"> 80%</span>   </li>
+                    <li class="bar react"><span class="ml-2 language"> React </span> <span class="mr-4 percentage"> 40%</span>   </li>
+                    <li class="bar php"><span class="ml-2 language"> PHP </span> <span class="mr-4 percentage"> 40%</span>   </li>
+                    
+                </ul>
+
+            </div>
+
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>
